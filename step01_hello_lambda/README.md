@@ -137,7 +137,37 @@ cdk deploy
 
 Get the URL from the output and test it using curl or paste the url in browser:
 
-curl https://xxxxxx.execute-api.us-east-2.amazonaws.com/prod/
+```
+https://xxxxxx.execute-api.us-east-2.amazonaws.com/prod/
+```
+
+### step 14
+
+Get the URL from the output and test it using curl or paste the url in browser:
+
+```
+https://xxxxxx.execute-api.us-east-2.amazonaws.com/prod/
+```
+
+## steps to test the lambda function locally
+
+Note: Note SAM should be installed and Docker running
+
+```
+cdk synth --no-staging > template.yaml
+```
+
+Find the logical ID for your Lambda function in template.yaml. It will look like HelloHandler2E4FBA4D, where 2E4FBA4D represents an 8-character unique ID that the AWS CDK generates for all resources. The line right after it should look like: Type: AWS::Lambda::Function
+
+```
+sam local invoke HelloHandler2E4FBA4D --no-event
+```
+
+Destroy the app
+
+```
+cdk destroy
+```
 
 ---
 
