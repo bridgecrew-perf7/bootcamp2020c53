@@ -149,7 +149,7 @@ Get the URL from the output and test it using curl or paste the url in browser:
 https://xxxxxx.execute-api.us-east-2.amazonaws.com/prod/
 ```
 
-## steps to test the lambda function locally
+## Steps to test the lambda function locally
 
 Note: Note SAM should be installed and Docker running
 
@@ -187,7 +187,20 @@ cd cdk.out
 sam local start-api -t {stackname}.template.json
 ```
 
+### Reading Material
+
+- [CDK for beginners](https://levelup.gitconnected.com/aws-cdk-for-beginners-e6c05ad91895)
+- [AWS Lambda is winning, but first it had to die](https://acloudguru.com/blog/engineering/aws-lambda-is-winning-but-first-it-had-to-die)
+- [Study AWS CDK Workshop follow the TypeScript Path](https://cdkworkshop.com/)
+- [bootstrapping](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html)
+- [assets](https://docs.aws.amazon.com/cdk/latest/guide/assets.html)
+- [Run lambda function locally 1](https://docs.aws.amazon.com/cdk/latest/guide/sam.html)
+- [Run lambda function locally 2](https://tlakomy.com/run-cdk-lambda-function-locally)
+- [Running API Gateway locally](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-using-start-api.html)
+
 ---
+
+## Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
 
