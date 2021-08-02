@@ -68,6 +68,53 @@ Initialize your lambda function
 
 ```
 
+### step 6
+
+Installing Bootstrap Stack.
+For Lambda functions we will need to do [bootstrapping](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html) becuase they require [assets](https://docs.aws.amazon.com/cdk/latest/guide/assets.html) i.e. handler code that will be bundleded with the CDK library etc. and stored in S3 bootstraped bucket:
+
+```
+cdk bootstrap
+```
+
+### Step 7 (optional)
+
+Run the following command to see the cloud formation template of your cdk code.
+
+```
+cdk synth
+```
+
+### Step 8 (optional)
+
+Run the following command to see the difference between the new changes that you just made and the code that has already been deployed on the cloud.
+
+```
+cdk diff
+```
+
+### Step 9
+
+Run the following command to deploy your code to the cloud.
+
+```
+cdk deploy
+```
+
+if you did not run "npm run watch" in the step 4 then you need to build the project before deployment by running the folliwng command. npm run build will also compile typescript files of the lambda function
+
+```
+npm run build && cdk deploy
+```
+
+### step 10
+
+Now test the function in AWS Lambda Console (make sure you are in the correct region):
+
+```
+https://console.aws.amazon.com/lambda/home#/functions
+```
+
 ---
 
 This is a blank project for TypeScript development with CDK.
