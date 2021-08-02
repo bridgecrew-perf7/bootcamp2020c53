@@ -8,4 +8,4 @@ While teating lambda function and api locally it is necessary to have YAML file 
 
 ## Sections
 
-- [Lambda Functions](./step01_hello_lambda/Readme.md)
+- [Lambda Functions](./step01_hello_lambda/)
