@@ -115,6 +115,30 @@ Now test the function in AWS Lambda Console (make sure you are in the correct re
 https://console.aws.amazon.com/lambda/home#/functions
 ```
 
+### step 11
+
+Next step is to add an API Gateway in front of our function. Install the dependency: npm install @aws-cdk/aws-apigateway
+
+```
+new apigw.LambdaRestApi(this, "Endpoint", {
+      handler: hello,
+    });
+```
+
+### step 12
+
+deploy again
+
+```
+cdk deploy
+```
+
+### step 13
+
+Get the URL from the output and test it using curl or paste the url in browser:
+
+curl https://xxxxxx.execute-api.us-east-2.amazonaws.com/prod/
+
 ---
 
 This is a blank project for TypeScript development with CDK.
