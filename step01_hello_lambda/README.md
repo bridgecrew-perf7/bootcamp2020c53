@@ -169,6 +169,24 @@ Destroy the app
 cdk destroy
 ```
 
+Single Stack Project commands to run locally (SAM and Docker installed and Docker running):
+
+```
+cdk synth --no-staging > template.yaml
+
+sam local start-api
+```
+
+Multi Stack Project commands to run locally (SAM and Docker installed and Docker running):
+
+```
+cdk synth --no-staging
+
+cd cdk.out
+
+sam local start-api -t {stackname}.template.json
+```
+
 ---
 
 This is a blank project for TypeScript development with CDK.
