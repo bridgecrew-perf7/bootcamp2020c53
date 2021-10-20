@@ -1,4 +1,4 @@
-# Deploying Serverless Lambda Functions
+# Step01 Deploying Serverless Lambda Functions
 
 ## Steps to compile the code
 
