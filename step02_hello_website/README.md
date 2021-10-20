@@ -1,4 +1,4 @@
-# Deploying Serverless Lambda Functions
+# Step 02 Deploying Website
 
 ## Steps to Deploy Website
 
