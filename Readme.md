@@ -1,4 +1,4 @@
-# bootcamp2020C53 - Deploying Serverless Lambda Function And Website Deployment With Cloudfront
+# bootcamp2020c53 - Deploying Serverless Lambda Function And Website Deployment With Cloudfront
 
 ## Hello Lambda & Hello Website
 
