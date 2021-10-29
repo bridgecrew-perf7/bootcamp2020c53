@@ -1,6 +1,6 @@
-# bootcamp2020c53 - Deploying Serverless Lambda Function And Website Deployment With Cloudfront
+# bootcamp2020c53 - Deploying Lambda and Websites with CDK
 
-## Hello Lambda & Hello Website
+## Deploying Serverless Lambda Function And Website Deployment With Cloudfront
 
 ## Class Notes: -
 
